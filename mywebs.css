@@ -1,0 +1,170 @@
+h1{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 35px;
+ 
+   }
+h1 ins{
+font-style:italic;
+font-weight:300;
+text-decoration-line: none;
+}
+section.title{
+  padding:0px 20px;
+  line-height: 0.3;
+  border : 1px solid orange;
+}
+section{
+  margin-bottom:30px;     
+}
+
+
+.menu1:hover{
+  background-color: pink;
+}
+.menu2:hover{
+  background-color: pink;
+}
+.lo1 li:hover{
+background-color: pink;
+}
+.lo11 li:hover{
+  background-color: pink;
+  }
+.left_box{
+border:1px solid orange;
+
+}
+.right_box{
+border:1px solid orange;
+
+}
+.lo1{
+  display :none;
+  
+  padding: 0px 4px 0px 20px;
+}  
+.lo11 {
+  display :block;
+  padding: 0px 4px 0px 20px;
+}
+
+ .lo11{
+  display :block;
+  
+  padding: 0px 4px 0px 20px; 
+}
+
+
+.left_box{
+     width: 20%;
+     margin-right:40px;
+     height:auto;
+
+  }
+
+.right_box{
+    width: 100%;
+    height:600px;
+    height:auto;
+    float:left;
+    border
+   
+    
+}
+.main_right{
+  width: 80%;
+  flex-direction: row;
+}
+
+
+
+.center_box{ 
+    border: 1px solid orange;
+    display : flex;
+    align-items: flex-start;
+    justify-content: space-between;
+   
+}
+.info{ 
+  display: none;
+}
+.info2{
+  display:none;
+  
+}
+.info3{
+  display:none;
+}
+.info4{
+  display:none;
+}
+.info .pp1{
+  font-size:20px;
+}
+.pad {
+  margin-left: 13px;
+}
+.right_box .pp2{ 
+    font-size :25px;
+    text-decoration: underline;
+}
+.right_box .pp5{
+    font-size:18px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.info3 li{
+  margin-bottom: 10px;
+  font-size:17px;
+}
+.right_box p{
+  padding:0px 10px 0px 10px;
+  font-size:17px;
+}
+
+img[class = i1]{
+height:500px;
+width:700px;
+
+
+}
+
+
+img.i2{
+height:200px;
+width:360px;
+padding:10px 0px 0px 20px; 
+border: 1px solid black;
+
+}
+img.i4 {
+  height:200px;
+  width:350px;
+  padding:10px 0px 0px 20px; 
+  border: 1px solid black;
+}
+
+.i23{
+    height:200px;
+    width:360px;
+    padding:10px 0px 0px 20px; 
+    border: 1px solid black;
+    margin-left: 30%;
+}
+img.i22{
+    width:300px;
+    height: 250px;
+    padding:10px 0px 0px 20px; 
+    border: 1px solid black;
+}
+.i3 {
+border:1px solid black;
+}
+.im1{
+display:flex;
+justify-content: space-evenly;
+
+}
+.margin1{
+  margin-top:20px;
+}

@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel ="stylesheet"  href="mywebs.css"></link>
+</head>
+<section class="title" class="b">
+  <h1><ins>CS424</ins> WORK PAGE</h1>
+  <p>KHANG MACH</p>
+  <p>CLASS: SPRING 2021</p>
+</section>
+  <div class="center_box">
+  <div class="left_box">
+     
+    <div id ="pm1" > 
+        <li class= "menu1" > Description of Project1</li>
+        <div class="lo1" id="lo1d">
+            <li onclick = "t1()">How project task work</li>
+            <li onclick = "t2()">How processing data</li>
+            <li onclick = "t3()">Interesting fact from visualization</li>
+            <li onclick = "t4()">Video</li>
+        </div>
+    </div >
+    <div >
+        <li class ="menu2"> Link to Project1</li> 
+         <div class= "lo1" id="lo2d"> 
+         <li><a href="https://github.com/stevenmach123/cs424/tree/main/Documents/SP2021/CS424/project1_cs424"> To Github </a> </li>
+         <li><a href="https://kmach6cs424.shinyapps.io/work1_KM/"> To shiny visualization</a></li>
+       </div> 
+   </div>   
+   
+   <div> 
+      <li class= "menu1 margin1" id="menu21"> Description of Project2</li>
+        <div class="lo1" id="lo21d">
+        <li onclick = "t2_1()">How project task work</li>
+        <li onclick = "t2_2()">How processing data</li>
+        <li onclick = "t2_3()">Interesting fact from visualization</li>
+        <li onclick = "t2_4()">Video</li>
+
+        </div>
+        <li class ="menu2" id ="menu22"> Link to Project2</li> 
+        <div class= "lo1" id="lo22d"> 
+        <li><a href="https://github.com/stevenmach123/cs424/tree/main/Documents/SP2021/CS424/work3"> To Github </a> </li>
+        <li><a href="https://kmach6cs424.shinyapps.io/work3/"> To shiny visualization</a></li>
+      </div> 
+
+    </div>
+
+    <div>
+      
+    
+      <li class= "menu1 margin1" id ="menu31"> Student Choice Spec</li>
+      <div class="lo1" id="lo31d">
+        <li onclick = "t3_1()">Purpose/ Data collect /Who user</li>
+        <li onclick = "t3_2()">Questions/Answers</li>
+        <li onclick = "t3_3()">What work/ What need improve </li>
+        <li onclick = "t3_4()">Video</li>
+      </div>
+      
+    </div> 
+
+
+
+    <div> 
+      <li class= "menu1 margin1" id="menu41"> Description of Project4</li>
+        <div class="lo11" id="lo41d">
+        <li onclick = "t4_1()">How project task work</li>
+        <li onclick = "t4_2()">How processing data</li>
+        <li onclick = "t4_3()">Interesting fact from visualization</li>
+        <li onclick = "t4_4()">Video</li>
+
+        </div>
+        <li class ="menu2" id ="menu42"> Link to Project4</li> 
+        <div class= "lo11" id="lo42d"> 
+          <li ><a href="https://github.com/stevenmach123/cs424/tree/main/Documents/SP2021/CS424/work4"> To GitHub</a></li>
+        </div> 
+
+    </div>
+
+
+
+  </div>
+
+  <div class="main_right">
+
+   <div class="right_box" id ="rbox1" >
+     <div class="info">
+      <p>The project  focus on 3 tasks of using visualization on  evaluate 9 energy sources and MegaWat for each 52 state or entire US from 1990 to 2019</p> 
+      <p class="pp1">First task:<p>
+      <p>First task, we want a general visualization on amount/ percent  each  source change of entire US across 1990- 2019 by display on line chart, or proportion each energy relative to other of a specific year displayed on multiple stacks bar  or  Raw table display to specify what amount/ percent(relative to other energy of single year) of 9 sources at once across year.  
+      </p>
+      <p> On my display task 1.1 tab give focus on percent and amount stack chart. Task 1.2 tab give display of amount and percent for line charts and raw table; We can select new one of 9 sources for line chart on side bar item "Resource" and  select "mode for Raw Table" to change display of raw table to be display amount or percent for 9 sources across years </p>
+      <p class="pp1">Second task:</p>
+      <div class = "im1"><img  src ="image/pc5.png" class="i1"></div> 
+      <div class = "im1"><img  src ="image/pc1.png" class="i1"></div>
+       <p>Comparing how 9 sources MegaWatt varies with respect to different states and years. So select task 2 tab on dashboard you will see 2 bar chart  each display 9 sources for its own state and year selected by either on "select State (Bar1) Task2" or "select Year (Bar1) Task2" for 1st chart, similar with select State and Year (Bar2) Task 2 for 2nd chart. By the default I let 2 chart display All on "Resource Bar1" and "Resource bar2", so select different years to compare for a state on 2 chart or select different  states to compare for a year on 2 chart will give  dynamic change for 9 source bars for  that state in specific year. </p>
+       
+       <p> Select "Resource Bar" to be one of 9 source will give a single bar. We might found that is not helpful as if we select All to see at once for all sources to compare across.That is why we have Scale Option on top left to allow you switch between Overall Scale(based on  max of specific source on any state in any year you could possibly found)  and Base Scale</p>
+       <div class = "im1"><img  src ="image/pc2.png" class="i1"></div>
+       <p>Base Scale  activate only one of 2 chart with “Resource Bar” select input is 1 of 9 source(!=All). This mode 
+        Allow to compress new max limit  of y axis for both bar, which could be either found on 1st chart or 2nd chart. This mean if 1st chart(during display 1 of 9 sources) is higher than 2nd chart, then its bar got maximum high with new max limit, and 2nd chart bars height(no matter in Resource bar input is All or 1 of 9) will stretch up to proportional to new assigned limit of 1st chart. </p>
+        <div class = "im1"><img  src ="image/pc3.png" class="i1"></div>
+        <div class = "im1"><img src ="image/pc4.png"class="i1"></div>
+        <p>Or one example if 2nd chart( displaying All sources) found a higher source, then that new max limit assigned for 2 chart, this make a highest source bar got max height and bar adjacents( same chart) to stretch up proportional to new max limit, and 1st chart(must be single bar) to stretch up to new assigned limit as well. Scale limit is still worked if both chart with Resource Bar input is 1 of 9 sources. </p>
+        <p>However, despite you select Scale Option with Overall or Base  if 2 chart select input of Resource Bar is both All, then the Scale mode is still Overall, until you change 1 chart Resource Bar input is 1 of 9 source. </p>
+        <p class ="pp1">Third task</class>
+          <p>Task 3 tab, we will generate us map displaying 52 states. The top map,  states got darken or lightening depend on how a lot or little MegaWat generated for particular source in particular year. And below map focus on proportion of  that source to total source in a specific state. Meaning a state have some source are used more/less in particular year. So, you can use "select Year Task3" to change years and "select Source Task3" to change one of 9 sources(also include US Total)   
+ 
+          </p>
+      
+     </div>
+    
+      <div class= "info2">
+          <p>The original data from https://www.eia.gov/electricity/data/state/ ,the data is made as csv annual_generate_state.csv (which you can access my GitHub for see it). The data has column name is STATE,YEAR,TYPE OF PRODUCER,ENERGY SOURCE, MEGAWATT.</p>
+          <div class="im1">
+            <img src=image/pic2.2.png class="i2" > 
+            <img src=image/pic2.1.png style="width:380px;height:110px" class="i3" > 
+           </div>
+           <p>First, I rename column names to be convient ,like state, year, type, source, Wat. Second, the dataset got miss identifier which I have to remove before generate visualization. To know what state is missing and how values of that showed differently than rest of other row,  I need sort dataframe in either descend/ascent order by state to reach the outliner easily. I realized it got a blank space. So, when I generate subset ulitiliti, I have stating that, state != " " & Wat > -1 & source != "Other" & source !="Other Gases" &  source != "Other Biomass" & source != "Pumped Storage". This ultiliti only permit  9 common source and  handle Wat is positive.</p>
+           <div class="im1">
+             <img src=image/pic2.3.png  style="width:380px;height:110px" class="i3" > 
+             <img src=image/pic2.4.png  style="width:380px;height:110px" class="i3" > 
+          </div> 
+          <p>Third, some source got long name like "Hydroelectric Conventional", "Solar Thermal and Photovoltaic", "Natural Gas" need to have simple word name.  Fourth, when do unique(ultiliti), I realize one US-Total(not upper case) and US-TOTAL(upper case), so I need do upper case in situation  we need US-TOTAL entire data. And finally, I need convert number of Wat column to be integer, because integer/numeric  allow ggplot or geom_bar to filtering by statistic/count. I do this by gsub(",","",ultiliti$Wat) to remove comma, then do as.numeric(ultiliti$Wat). </p>
+          <div class="im1"><img src=image/pic2.5.png  style="width:420px;height:250px" class="i3" >  </div>
+          <p>In addition to task2, we need select input as name of state (not abbreviation), the way I do is setNames(state.key,state.name) [simiar like as.factor], this got unique list of state abbreviations on left and list of ordered state name on the right. So,  setNames(state.key,state.name)[input$state], this will search for selected state input in state.key if see the match in particular position(3rd index), then output is 3rd index of state.name.</p>
+          <div class="im1"><img src=image/pic2.6.png  style="width:300px;height:250px" class="i3" >  
+            <img src=image/pic2.7.png  style="width:550px;height:150px" class="i3" >  
+          </div> 
+          <p>addition to task3, there some state do not have full of 9 sources in particular year, as I realized when do  sum for 9 sources within for each of 52 state(within specific year). So, when got subset of a source and year, before map to usmap I just add extra dataframe with rbind to some state do not exist with sum of that source is 0. </p>
+      </div>
+      <div class= "info3">
+          <li>On task1, Overall US We can found Coal percent   is a little depleted across year, meanwhile  amount Coal still increases from 3.8e+09 to 4.0e+09 from 2000 to 2007.  But the amount of Coal seem decrease dramatically after 2008, which make sense if match to Coal percent. </li>
+          <li>On task1, Nuclear amount overall seem increase over years, got its strong jump 1998 at 1.3e+09 and reach peak at 2010 with 1.6e+09, however, percent Nuclear is just flat across year. Indicate, total amount of very year forward increase as well without look on stack bar. </li>
+          <li> Wind and Wood is not common source to generate MegaWatt</li>
+          <li>On task3, Around 1990-2005, Texas  got highest  Coal  Watt amount, and several  second highest are Indiana, Ohio, Penn. Seem like Texas have other higher source candidate (because Texas percent of Coal colored not really dark on map ), so back to task2, Texas have Gas is highest. Meanwhile  Indiana, Ohio, Penn are nominated by Coal Watt generator.</li>
+          <li>Below 2000s,  Gas is only strong on Texas and California, but got more on Florida 2006, New York  2010, but become more prominence( see on percent map) over time on NorthWest and some states on NorthSouth </li>
+          <li>Almost every year, Illinois and NewYork has highest  nuclear generator amount. But on NorthEast nuclear is prominence,  state  eg. South/North Carolina, New Jersey, Virginia use nuclear as main source generator </li>
+          <li>Hydro is pretty strong on some NorthWest,like Oregon,Washing, Idaho (obvious to think, because near coast). Second rank may be New York, California. But around 2008, California start to not really depend on Hydro. </li>
+      </div>
+      <div class= "info4">
+        <iframe width="700" height="600" src="https://www.youtube.com/embed/NZ4ET79bZiM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+       
+ 
+   </div>
+
+   <div class="right_box" id ="rbox2">
+    <div class= "info">
+        
+        <p> This project focus on using leaflet to display different energy source  cultivated by  plants on varies of location (Longtitude and Latitude) across US.  </p> 
+        <p class="pp1">TASK1 <p>    
+          <p>For task 1, we  have checkboxes of different 10 energy, so user can filter which energy looking for, and plants in Illinois  with at least a match of any energy selected gonna display. Color of individual plant being determined by what energy matched. However, things got tricky when a plant match more than 1 kind of energy.  </p>    
+          <div class="im1">
+            <img src=image2/pic1.1.png class="i2" > 
+            <img src = image2/pic1.2.png class= "i2"> 
+          </div>
+          <p>Let say you pick Coal, Hydro, Oil. Plants can match all, or match Coal,Oil or Hydro,Oil or Coal,Hydro. In this case, the color numeric range from  light pink, pink, violet, purple,orchid (Or simply see pink, purple). And even color might look a bit same, but the fact that each combination is distributed uniquely on that numeric color range. Therefore, it would be easier to distinguish by less different matched energy because each can represent a distinct color. However, when match like >5, some color gonna push within the range ( let say 2 more between purple and violet), so hard to see, but at lease we can recognize which are mixed.  </p>
+          <p>So how to be able to check checkboxes to see this effect ? If you pick All, 100% chance you see blend. Also when  check renewable and/or non renewable. Renewable and/or  at least 2 individual energy.  Non renewable and/or at least 2 individual energy.  </p>
+          <p class="pp1">TASK2 <p>
+          <p>For task2, similar to task1 but now let have data PLNT2010 and PLNT2000, and also allow user to pick any state to see how 9 sources independently displayed on different states. And also we make screen split map so user can make some meaningful compare. So user can pick same year dropdown, and source, but one map with Wind,Oil and other is Wind,Gas. </p>
+          <div class="im1">
+            <img src=image2/pic1.3.png  style="width:440px;height:290px" class="i3" > 
+            <img src = image2/pic1.4.png style="width:440px;height:290px" class="i3"> 
+          </div>
+          <p>Also we want compare simultaneously  sources, which Botton called "same source handle". If you check it, then either check a box on either side will make checkbox of other will check/uncheck in order to match checks its peer map. So this allow user to change between year and states to see how different of  energy selected appear on Michigan with different year; or same state with different years.  And you can unable this mood by click "return to normal".  In addition, we can type of map, I think one style layer is about on highway focused, other on road/location focused, and other is on forest focused. And reset view gonna bring map to original view when we expand map and scroll to somewhere </p>
+          <p class="pp1">TASK3 </p>
+          <p>Task 3, we want to show entire US gonna(still have option to see individual state dropdown). So user can click “All” on state dropdown and a year, to see how All source, renewable ,non renewable, at least 1 source gonna distribute across states. So we might see some sources displayed more on same states. Or what direction of US have more Coal, Hydro, and/or Oil. </p>
+          <div class="im1">
+            <img src =image2/pic2.5.png style="width:440px;height:290px" class= "i3"> 
+            <img src =image2/pic2.6.png style="width:440px;height:290px" class= "i3">
+            
+          </div>
+          <div class="im1"><img src = "image2/pic2.1.png" style="width:440px;height:290px" class= "i3"> </div>
+          <p>In addition, we have slider to filter individual plants based on whether its total MWh fit between range. So there are no strictly treat which  slider is >= or <=. But they can be >= or <= any moments depend on how you slide. If slide slider1 more than slide2, then slider 1 is max, slider2 is min, vice versa. </p>
+          <p> At start slider1 is min and slider2 is max, so can see all plant encompassed on unique  max and min of your selection subset(a specific year, a specific state, a specific energy select combination).  Meaning if you change to another state or another year, max and/or min more likely update. Or check  some group of energy also update min/max, but less likely happen, because if you pick a source that have highest  generation, then more source not gonna change max, similar to min. </p>
+
+
+      </div>
+    <div class= "info2">
+      <p>The original data is available from https://www.epa.gov/egrid/download-data . Download eGRID2018v2 xlsx. And choose PLNT18 tab. As well as eGRID2000 and eGRID2010. In eGRID2000_plant.xls file will want  EGRDPLNT00 </p>
+      <p>Since, there are plenty of column we only concern about 14 column, so we want to paste it to excel. Then, we can remove any subtitles and keep single header and change single to words for each header. Now we can use application to convert xlsx to csv. Now we can put on RStudio, and do read.table(file = "2018_datav2.csv", sep = ",",skipNul="TRUE",header = TRUE).</p>
+      <div class="im1">
+        <img src=image2/pic2018.1.png style="width:470px;height:150px" class="i3" > 
+        <img src = image2/pic2018.2.png class= "i2"> 
+      </div>
+      <p>On process, PLNT 2018 has plenty of rows that has all column  ""  indicate no contribute on any source, so we want subset any column like  subset(lote1, Coal!=""). Also use gsub and as.numeric(as.character) to convert to int. To be efficient, instead of do gsub and as.numeric for every column. I melt data first, then gsub, then convert, then change negative numeric to 0. Emerge  Other1 and Other2 by ifelse(lote12$Other1==0,lote12$Other2,lote12$Other1). And dcast to go back unmelt data frame </p>
+      <div class="im1">
+        <img src=image2/pic2010.1.png style="width:470px;height:150px" class="i3" > 
+        <img src = image2/pic2010.2.png style="width:400px;height:90px" class= "i2"> 
+      </div>
+      <p>On process, PLNT 2020, seem like Long and Lat has N/A, and take those row out, do similar process like PLNT2018 </p>
+      <div class="im1">
+        <img src=image2/pic2000.1.png style="width:470px;height:150px" class="i3" > 
+      </div>
+      <p>On process, EGRDPLNT00, a bit tricker, where Long and Lat and 10 source, at least 1 could be "N/A" in string. So I have no choice but subset each 12 column by |. And when I melt and convert to numeric(kWhm corespond to each energy variable) and unmelt. I just figure dcast give error such there are duplicate in energy variable with different value. so I have to do group_by with sum to condense to unique identifier. Lastly remember to Long*-1  </p>
+      <div class="im1">
+        <img src=image2/pic3.1.png  class="i2" > 
+        <img src = image2/pic3.2.png  style="width:300px;height:240px"class= "i3"> 
+      </div>
+      <p>Also just brief description  how to add additional column so leaflet not have to check how many match, what matched in checkbox selection. </p>
+      <p>After I subset state  lote13il - subset(lote13,State=="IL”). Me provide function a. to pass dataframe and matched list. For each row just traverse to 10 diff source, check which are matched on selection( again at least one match is enough for leaflet to render that plant on map, and match> 1 will be treat as mixed match =0, will be ignored) and similar with group_select(e, matched), where I concat a string by sep = "," , will show different combination of mix on by legend on top right. </p>
+    </div>
+    <div class= "info3">
+      <div class="im1">  <img src=image2/alaska1.png  class="i2" >  </div> 
+      <p>Alaska in 2010, also have Wind. And have more Oil, and I think it’s obvious to have Hydro as well</p>
+      <div class="im1">  <img src=image2/iowa.png  class="i2" >  </div>
+      <p>Iwowa have a lot plant give Oil. But at the same also have 2nd most is Wind in many location. But again it has only 3 kind of plant generate renewable. </p>
+      <div class="im1">  <img src=image2/lou.png  class="i2" >  </div>
+      <p>In 2010 Lousiana, only have Hydro, Biomass. On 2018 start to have plant generate Solar as well </p>
+      <div class="im1">  <img src=image2/idaho1.png  class="i2" >  
+       <img src=image2/idaho2.png  class="i2" > 
+      </div>
+      <p>Idaho seem like pro-renewable, have majority Hydro, and start 2018 also have Solar, Only have Oil,Gas as non renewable and less </p>
+      <div class="im1">  
+        <img src=image2/ari1.png  class="i2" >  
+       <img src=image2/ari2.png  class="i2" > 
+      </div>
+      <p>In 2010 Arizona use a lot of Gas. But seem 2018, it become to renewable trend like Idaho, use mostly Solar. And reduce a lot  amount of Gas and Oil .  </p>
+      <div class="im1">  <img src=image2/flori.png  class="i2" > 
+      </div> 
+      <p>Florida have a lot Mix Oil,Gas  and Coal, Oil </p>
+      <div class="im1">  
+        <img src=image2/cali1.png  class="i2" >  
+       <img src=image2/cali2.png  class="i2" > 
+      </div>
+      <p>In 2010 California not sure in which trend, but have a lot of plant for Hydro, since near port.But also have a lot of plant for Gas. But in 2018, obvious start to have plant generate Solar </p>
+      <div class="im1">  <img src=image2/michi.png  class="i2" >  </div>
+      <p>At first glance, Michigan seem like use a lot Hydro and Biomass,Wind. But when in mix. There are plenty of plants generate mix among non-renewable energy. </p>
+      </p>
+      </p>
+    </div>
+    <div class= "info4">
+      <iframe width="700" height="600" src="https://www.youtube.com/embed/AvZ7pqgm2mA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+        
+  <div class="right_box" id ="rbox3">
+     <div class="info">
+      <a href= https://datausa.io/profile/naics/educational-services-health-care-social-assistance#about>https://datausa.io/profile/naics/educational-services-health-care-social-assistance#about</a>
+      <p class ="pp2">PURPOSE OF VISUALIZATION <p> 
+        <div class="im1">  
+        <img src ="image2/c1.5.png" class="i2">
+        </div> 
+        <div class="im1">  
+          <img src=image2/c1.3.png  class="i2" >  
+         <img src=image2/c1.4.png  class="i22" > 
+        </div> 
+      <p>The visualization raise our awareness Education service, Health care, Social Assistance (EHS) is actually a sector in industry and have increasing demand over a decade. The visualization show sector itself have a variety of jobs that suitable with specific  individual specialty  and their work environment. For instance, we generally know the sector divided in 3 categories (mentioned as sector name), but  social workers, secondary School teacher, surgeons, dentist will need educational/science/art  degree to perform their work requirement. Meanwhile nursing assistance, home health aides can do their job without degree, but might have more workload. Then, visualization also show some jobs even have educational/science/art degree might don’t usually have high paid, so we need to use visualization to figure out more information of which jobs categories are more respected than others in term of salary.  </p>
+      <p>In shallow part, visualization give us sense average salary per year of different gender  in core(high employment) EHS  jobs in US  or average salary per years of EHS sector with respect to other sector. In depth part, visualization show  trends/compare  EHS share investment input and out with respect to other sector across year and how different ethnicity employment distribute on core EHS jobs in US </p>
+      <p class = "pp2">WHAT IS DATA and HOW COLLECT</p>
+      <p> The data coming from  the Census Bureau and ACS PUMS 1-YEAR ESTIMATE. The Census Bereau data have people to answer series of questions  voluntarily might  either on internet, mail, telephone interview to record individual housing unit, their occupation, salary ,gender, and ethnicity to detail recognize all jobs in 3 main generate bar charts and how those jobs distributed in their category. And sometime, The Census Bereau will have a representative sample of people coming from different living area over states to make personal interview .The Census Bereau can give sense of which EHS jobs have most common/specialized/higest earn average earn, and some of this jobs trend altered their rank over years.   While ACS PUMS data will more focus on average salary over all US states changes over years and salary per year of different ethnicity  on main EHS jobs over years. </p>
+      <p class = "pp2"> WHO USE THIS VISUALIZATION </p>
+      <p>The visualization  have different views such as nest squares of different jobs contained in their own speciality or bar charts  of 4 jobs represent most common/ specialize/ highest paid column across 6 years, or ordered sectored in big square and size manifest percent distribution or have 5 core EHS compared amongs group by gender . Those views look  aesthetic, clear, and easy touch the react of what the data want audience to know. </p>
+      <div class="im1">  
+        <img src=image2/c1.6.png  class="i2" >  
+       <img src=image2/c1.7.png  class="i2" style="width:230px" > 
+      </div>
+      <div class="im1"> <img src=image2/c.18.png  class="i2" style="width:230px"> </div>
+      <p> So, I would say the data is good for common viewers to understand variety job aspect of EHS. Or medium  investor who are searching for is it good decision to invest in EHS sector; or what jobs to invest based on employment rate trends, specialty, and average salary over 6 years. Also, people in one  EHS sector but still might not be interested in their current workplace/work requirement  , so they might consider other jobs in  different category with higher employment rate and might not need higher degree requirement. Service occupation and Sales/Office might prefer to move science and art occupations (teaching assistant, social worker ,educational guidance) because it can give strong sense of giving your away ethnic and knowledge to society. Or people  can  consider move to other jobs within same categories but have higher salary and within their specialty. </p>
+    </div> 
+     <div class ="info2">
+      <p class= "pp5">* What jobs commonly considered as high paid job  </p>
+      <p>Physician, Dentist, Podiatrists ( appear in all 6 years)</p>
+      <div class="im1">  
+        <img src=image2/c1.1.png  class="i2" >  
+       <img src=image2/c1.2.png  class="i2" > 
+      </div>
+      <p class="pp5">* What job varied between high paid and most specialized jobs </p>
+      <p>Nurse anesthetists</p>
+      <div class="im1">  
+        <img src=image2/c2.1.png  class="i2" style="width: 380px" >  
+      </div>
+      <p class ="pp5">* What jobs is commonly considered most common jobs</p>
+      <p>teaching assistants, nurse assistant, nursing/pyschiatric/home health aids ,registered nurse, elementary middle School teacher </p>
+      <div class="im1">
+        <img src=image2/c2.2.png  class="i2" >  
+        <img src=image2/c1.3.png  class="i2" > 
+      </div>
+      <p class="pp5">* What jobs have  high employment rate in Service Occupation and science/art Occupation </p>
+      <p>	Science and Art: elementary middle school teacher, registered nurse, post elementary teacher </p>
+      <p>Service: Personal aids, nurse assistant.</p>
+      <div class="im1">  <img src=image2/c2.4.png  class="i2" > </div>
+      <p class="pp5">* What jobs is considered low paid jobs but not low specialized </p>
+      <p>Tours/ travels guides ,  paper goods machine setters/operator/tenders (not find any years contain those job on right pic)</p>
+      <div class="im1">  
+        <img src=image2/c2.6.png  class="i2" >  
+        <img src=image2/c2.7.png  class="i2" > 
+        </div>
+      <p class ="pp5">What ethinicity recently  have highest  paid in  registered nurse, and post secondary ?</p>
+      <p>Asian (for 2 recent years)</p>
+      <div class = "im1">
+        <img src=image2/c2.8.png  class="i2" >  
+        <img src=image2/c2.9.png  class="i2" > 
+      </div>
+
+      <p class = "pp5">* What ethnicity say usually have highest paid in registered nurse</p>
+      <p>Asian,Alaska Native, Native Hawaii</p>
+      <div class = "im1">
+       <img src=image2/c2.10.png  class="i2" >  
+       <img src=image2/c2.11.png  class="i2" > 
+     </div>
+     <div class = "im1">  <img src=image2/c2.12.png  class="i2" >   </div>
+     <p class="pp5">* What ethicity usually have low paid in registered nurse </p>
+     <p>American Indian , White (for all 6 years)</p>
+     <div class = "im1">
+      <img src=image2/c2.14.png  class="i2" >  
+      <img src=image2/c2.15.png  class="i2" > 
+    </div>
+    
+    <p class="pp5" >* Do EHS job have fair wage distribution compared to National Average about 2-3 recently </p>
+    <p>Yes, it have higher wage average distribute than National Average about 1.3% in 40k -80k, while got lower than National Average bit (0.2-0.3%) in 130k-170k. So we can conclude most people in 30k-70k by looking at National Average ,and  EHS chi square curve do usually hit/go above the National Average. </p>
+    <div class = "im1">
+      <img src=image2/c2.16.png  class="i2" >  
+      <img src=image2/c2.17.png  class="i2" > 
+    </div>
+
+
+    <p class= "pp5">* What regions usually have high paid in EHS sector ? </p>
+    <p> A lot in west course, and north east, also near Illinois(North on right) </p>
+    <div class = "im1">
+      <img src=image2/c2.18.png  class="i2" >  
+      <img src=image2/c2.19.png  class="i2" > 
+    </div>
+    <p class= "pp5">* Is EHS sector is worth to invest ? </p>
+    <p>Definitely yes. It intake low share cost, but got purchase the largest share of product and service </p>
+    <div class = "im1">
+      <img src=image2/c2.20.png  class="i2" >  
+      <img src=image2/c2.21.png  class="i2" > 
+    </div>
+    
+  
+  
+  </div>
+   
+
+     <div class ="info3">
+      <p class ="pp2"> WHAT WORKS</p>
+      
+      <div class = "im1">
+        <img src=image2/c3.1.png  class="i2" >  
+        <div style="width:min-content">
+          <img src=image2/c3.2.png  class="i2" > 
+          <p>Not see phyicans, surgeons on most specialized, while most specialized more on teachers</p>
+        </div>   
+      </div>
+      <p>I think most common/most specialized /high paid bar chart is very creative split up, because not every highest paid jobs might have high specialized, but facts some dentist, physicians could have their degree/ vocational training to get higher paid. Meanwhile, not most common jobs are low paid, because post secondary school, middle school teachers do indeed have decent income </p>
+      <div class = "im1">
+        <img src=image2/c3.5.png   style="width:460px;height: 300px" >  
+      </div>
+      <p>Have grid block layout just a above the most common/most specialized /high paid bar chart do indeed help view at ease to recognized what jobs have highest paid but low employment rate. Or what work categories often require/not require specialize. Or what Jobs have good paid, but high employment rate. </p>
+      <div class = "im1"> <img src=image2/c3.4.png style="width:440px;height: 300px" >   </div>
+      <p>Wage distribution of different ethnicity  on core EHS  jobs layout very logical. Such we can see which ethicity have high paid for particular jobs compared to other group in same jobs. Or how this group paid average change for particular jobs over years. </p>
+      
+      <p class ="pp2"> WHAT NEED IMPROVE</p>
+      <div class = "im1">  <img src=image2/c3.7.png  class="i2" >     </div>
+      <p>The  pop is need of most common/most specialized/high paid might need additional information like that work category the job might be in, so viewer won’t have bias view such as most jobs in sales and occupation are low paid/ low specialty jobs. In fact, finance clerk do have high paid and strong specialty </p>
+      <p>  May need a bar graph ranking to show what jobs have low employment rate but got high salary/most specilized in Sale Occupation or Service/Office. Even square block are good in see distribution, but hard to look in individual jobs with ease when smaller size </p> 
+      <div class = "im1">  <img src=image2/c3.8.png  style="width:660px;height: 210px" >     </div>
+      <p>   Ethnicity wage distributes on common jobs, only focus on jobs at science/art. However, it would better to have some jobs representative Service Occupation and  Sale/Office. Or have 5 jobs represent on each work category. </p>
+      <div class = "im1">  <img src=image2/c3.9.png  style="width:560px;height: 250px" >     </div>
+      <p>Industrial flow, the bar flow look very aesthetic, but it’s hard to know what is the meaning, because there are no explanation, but my best guest is its output investment overtime, that most jobs gonna flow its money and product/service to EHS sector before reaching to final uses on left. </p>
+
+     </div>
+     <div class = "info4">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/SmnDzK7jb5I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     </div>
+   
+   </div>
+
+
+    <div class = "right_box" id = "rbox4">
+      <div class = "info"  >  
+        <p>This project focus on using mapview to display blocks and tract level of Chicago Community Area. As the block can have multiple houses and each house have essential information column eg. kWh, Gas, Housing Height, Total Population , which we can try to filter/ accumulate selected  column properties for each blocks. Then , we can observe how one block related to group of blocks, group of blocks related to a community, or group of tracts related to entire Chicago in tract level based on properties column we want observe. </p>
+        <p class="pp1">TASK1 </p>
+        <div class = "im1">
+          <img src=image2/3p1.1m.png  class="i4" >  
+          <img src=image2/3p1.2.png  class="i4" > 
+        </div>
+         <p>We focus on a Near West Side community. Here, we have 3 drop downs. Building Type  dropdown gonna filter out rows of house in any GEOID that label building_type other than the selected one, so we could see less blocks. Month dropdown is like subtask of Properties dropdown, it have 1-12 months that allow user to observe how kWh and Gas numeric capacity varies through months. </p>
+         
+          <p>While Properties dropdown represent  column of data that each block/ a house  should have, include  Electricity, Gas, Building Age, Building Height, Total Population. The numeric cap range of legend varies when selected a column property to focus.  So can see color of blocks more abundant/varies when select Age, Total Population by low range legend,  as compared to mono color when select Electricity by high range legend</p>
+          <div class = "im1">
+            <img src=image2/3p1.4.png  class="i4" >  
+            <img src=image2/3p1.5.png  class="i4" > 
+          </div>
+          <p>But also  we can have get new numeric cap range if we select a properties, then select a building type. Because this will delete/include  house  that have big value of that property in block.  </p>
+          <p>The line graph show sum kWh and Gas of all buildings/blocks  for each months. And this line graph will change the flow based on building_type selected. </p>
+        <p class="pp1">TASK2 </p>
+        <div class = "im1">
+          <img src=image2/3p12.1.png  class="i4" >  
+          <img src=image2/3p12.2.png  class="i4" > 
+        </div>
+        <p>We create split screen  and each screen will allow user to choose a community, which then can be evaluated by three drop down like above. So, the purpose will allow user to compare two different community  or within itself. For instance, we can compare same community with different selected building_type on a same selected properties. Or different community with same selected building_type on same selected properties. </p>
+        <div class = "im1">
+          <img src=image2/3p12.3.png  class="i4" >  
+          <img src=image2/3p12.4.png  class="i4" > 
+        </div>
+        <div class = "im1">
+          <img src=image2/3p12.5.png  class="i4" > 
+
+        </div>
+
+        <p>Whatever on same or different community, we can leverage drop down months when select same Gas/Electricity as properties, so we can compare two screen how Gas/Electricity differ within the same range months. Or Is there a different in capacity of Gas/Electricity early months and later month by same community selected. </p>
+        <div class = "im1">
+          <img src=image2/3p12.6.png  class="i4" style="width:390px;height:230px " > 
+
+        </div>
+        <p>Also we can reset view  and change color palette  for block coloring. In addition, on task 3.2, we have same logic plot display like task1, but here the plot have filter community, then  filter building_type. This can be helpful on basic level if we want see the flow of Electricity of a community interested. Or in higher level  to compare  gas/electricity  flow  of different/same  building_type in two different community , because dropdown just  limit a type  (Electricity or Gas) and limit  select of  two different community with (arbitrary building_type if have) to compare on a same/different month one at the time </p>
+        <p class="pp1">TASK3 </p>
+        <div class = "im1">
+          <img src=image2/3p13.1.png  class="i4" >  
+          <img src=image2/3p13.2.png  class="i4" > 
+        </div>
+          <p>We focus on tract level of observe an entire Chicago, so split screen implication still apply, but a bit simple, since we can eliminate a  community. dropdown. We can focus on compare color varies of tracts in two screen by same selected Electricity/Gas properties and same building_type , then compare with different months. Or things can get a bit clearer, if change to tab 3.2  with plot display flow of Electricity/Gas within 12 months, but the graph only change when filter differ building_type (not filter by community then building_type like before).</p>
+          <div class = "im1">
+            <img src=image2/3p133.1.png  class="i4" >  
+            <img src=image2/3p133.2.png  class="i4" > 
+          </div>
+          <p> On task 3.3 with more interest in show 10% tract that have  Oldest Building, Newest Building, Tallest Building, Most used Electricity, Most used Gas,  Most Total Population, Highest resident occupied  % , Highest renter occupied %. This can be also filter by differ building_type ( Resident type or All Buildings type) first, then take 10% tracts within.  </p>
+      </div> 
+      <div class = "info2 pad"  > 
+       <p>The data original from https://www.kaggle.com/chicago/chicago-energy-usage-2010   , the file row represent as each building/house, which  has GEOID of block that building stay in as well as  the electricity usage per month and the gas usage per month, the total population, average number of stories, average age, renter occupied %,   resident occupied %  .So, based on common observation, a GEOID can have multiple type of building( multiple row) or single type (multiple row). And GEOID is form of 15 bit ( 4 bit left is for block group and block ) while form of  11 bit (tract ). Which can use to merge with shape file in either block or tract level</p>
+       <p>So I merge by group_by GEOID, and select method of merge by creating a function, eg. Here I calculate total_kwh and check multiple on each group of GEOID </p>
+       <div class = "im1">
+        <img src=image2/3p28.png  class="i2" style="height:155px" >  
+        <img src=image2/3p22.png  class="i2"  style="height:155px" > 
+      </div>
+      <div class = "im1">
+        <img src=image2/3p25.png  class="i2" style="height:155px" >  
+      
+      </div>
+       
+      <p> Since, observe the column of electricity across month (kwh_1… kwh_12) and total_kwh , whenever is N/A  on a month, then all other month also N/A (include total_kwh ), so make sure all convert to 0 when see N/A . Unlike electricity,  thermal data I called it (the_1 … the_12) and total_the, some column the_n month get N/A, but other column thermal month is not N/A</p>
+      <div class = "im1">
+        <img src=image2/3p23.png  class="i2"  style="height:155px" > 
+      </div>
+      <p> Also, I got trouble convert GEOID into string format on excel when save data file as .csv, GEOID in numeric form. So, I add (a + GEOID), this allow RStudio recognize GEOID is as.character format, so need take (a) out. In addition, seem like some house not in any GEOID (as label 0) and have no building_type, so delete those. </p>
+      <div class = "im1">
+        <img src=image2/3p26.png    style="width:230px;height:50px" > 
+      </div>
+      <p> Also some building have N/A renter occupied % also give residential occupied % is 0 or N/A  and total population = some small number.  And   residential occupied % is N/A then total population is N/A. So in general, I make sure re_oc_percent and oc_unit_percent and total population  is 0 if counter N/A. I don’t want delete those column, since it will lost a lot of block information. </p>
+      <div class = "im1">
+        <img src=image2/3p24.png  class="i2"  style="height:155px" > 
+        <img src=image2/3p27.png  class="i2"  style="height:155px" > 
+      </div>
+       <p>Also I do substring with first 11 bit, this data file will be merged to tract level shapefile</p>
+      </div> 
+      <div class = "info3"  > 
+        <p>1. On Logan square, seem in east side, more commercial, which more use electricity. And also seem like the mix building is between commercial and residential, which they blend in side by side.</p>
+        <p class="pad">And we can confirm that those mixed with commercial with use more electricity then building with only resident.
+          <div class = "im1">
+            <img src=image2/3p313.png  class="i2"  style="height:155px" > 
+
+          </div>
+          <div class = "im1">
+            <img src=image2/3p312.png  class="i2"  style="height:155px" > 
+            <img src=image2/3p311.png  class="i2"  style="height:155px" > 
+          </div>
+        <p>2. Loop has majority is commercial building include those middle, only 2 block are resident. Most people in Loop aggregate on South and North East , while leave middle part almost no people, where those are also commercial building.  </p>
+        <p class="pad"> Also, the electricity on middle up and north west use a lot of energy even there only smaller than 25 people ,While a lot of people in South use so little electricity.  </p>
+
+        <div class = "im1">
+          <img src=image2/3p321.png  class= "i3" style="height:155px; width:240px" > 
+          <img src=image2/3p322.png class= "i3"   style="height:155px; width:240px" > 
+        </div>
+        <div class = "im1">
+          <img src=image2/3p323.png class= "i3"   style="height:155px; width:240px" > 
+          <img src=image2/3p324.png  class= "i3"  class="i2"  style="height:155px" > 
+        </div>
+        
+        <p>3. Seem like When compare Chicago Lawn with Hype Park/ Lake View.  Hype Park have higher buildings, then can be infer  most people.</p>
+        <p class="pad"> Even both place have a lot of block for residential, but considers majority of building of Hype Park is mixed with commercial, which can also logically explain higher population and use more electricity  in Hype Park/Lake View</p>
+
+        <div class = "im1">
+          <img src=image2/3p332.png  class= "i2"  > 
+          <img src=image2/3p331.png class= "i2"> 
+        </div>
+        <div class = "im1">
+          <img src=image2/3p334.png class= "i2"  > 
+          <img src=image2/3p333.png  class= "i2"   > 
+        </div>
+        
+     <p>4. In Lincoln Square, gas cap of resident building type distribute more equally  than commercial building type  </p>
+     <div class = "im1">
+      <img src=image2/3p341.png class= "i2"  > 
+     </div>
+
+     <p>5. Electricity  cap of Uptown   higher Electricity than Logan Square  , but seem like Uptown has electricity equal distribute strong on  resident building that nearly touch the cap. Meanwhile on Logan Square, just some building is orange and red on some mixed building, the rest (a lot mixed building and resident)  is far below the cap  </p>
+     <div class = "im1">
+      <img src=image2/3p351.png class= "i2"  > 
+      <img src=image2/3p352.png  class= "i2"   > 
+    </div>
+
+     <p>6. More resident building locate on South Chicago than Near West Side, which has more electricity used on consider only resident building. However,  Near West Side has more commercial and mixed building(commercial + resident), that have overwhelm electricity.  </p>
+      <p class ="pad">Especially, Near West Side   there are some  mixed building(commerce + resident) hit big cap in Electricity/Gas , that make other commercial and resident in Loop color green, which hard to see the different.  	</p>
+      
+      <div class = "im1">
+        <img src=image2/3p361.png class= "i2"  > 
+        <img src=image2/3p362.png  class= "i2"   > 
+      </div>
+      <div class = "im1">
+        <img src=image2/3p363.png class= "i2"  > 
+        <img src=image2/3p364.png  class= "i2"   > 
+      </div>
+
+    </div>
+     
+    <div class = "info4"  >
+        
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/RB2tVfEeet8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    </div> 
+
+      </div>
+      
+    </div>
+
+  </div>
+   
+  
+ 
+
+  <script src="mywebj.js"></script>
+</html>
